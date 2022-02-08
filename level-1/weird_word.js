@@ -12,4 +12,8 @@ function solution(s) {
   }
   return arr.join(" ");
 }
+
+function solution(s) {
+    return s.split(" ").map(x => x.split("").map((y, index) => index % 2 !== 0 ? y.toLowerCase() : y.toUpperCase()).join("")).join(" ");
+}
 console.log(solution("wo rd"));
